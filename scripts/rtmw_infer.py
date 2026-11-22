@@ -27,7 +27,7 @@ except ModuleNotFoundError as exc:
 from image_utils import make_cv_readable
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-ROOT = SCRIPT_DIR.parent if SCRIPT_DIR.name.lower() == "venv" else SCRIPT_DIR
+ROOT = SCRIPT_DIR.parent if SCRIPT_DIR.name.lower() in {"venv", "scripts"} else SCRIPT_DIR
 
 
 def main():

@@ -49,7 +49,7 @@ def check_environment(label, interpreter, packages, require_cuda):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--image", type=Path, default=ROOT / "image.avif")
+    p.add_argument("--image", type=Path, default=ROOT / "image1.avif")
     p.add_argument("--smplifyx-repo", required=True, type=Path)
     p.add_argument("--smplx-models", type=Path, default=ROOT / "models_smplx_v1_1" / "models")
     p.add_argument("--vposer", type=Path, default=ROOT / "vposer_v1_0" / "vposer_v1_0")
