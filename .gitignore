@@ -1,0 +1,27 @@
+# Python environments and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Model weights, assets, and vendor checkouts
+models/
+models_smplx_v1_1/
+vposer_v1_0/
+smplify-x-master/
+assets/
+external/
+*.pth
+*.pt
+*.pkl
+*.npz
+
+# Generated inputs and results
+results/
+*.avif
+*.obj
+*.glb
+*.blend
+
+# IDE files
+.idea/
